@@ -1,4 +1,5 @@
 {
+    "disableImageReuse": true,
     "applications": [
         {
             "name": "spartacusstore",
