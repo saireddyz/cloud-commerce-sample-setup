@@ -42,6 +42,9 @@
                 "cloudcommons",
                 "cloudhotfolder"
             ]
+        },
+        "languages" : {
+            "location": "hybris/config/languages"
         }
     },
     "properties": [
