@@ -11,7 +11,7 @@ import { environment } from '../environments/environment';
 import { ConfigModule, provideConfig } from "@spartacus/core";
 import { ViewConfig } from "@spartacus/storefront/shared/config/view-config";
 import { LayoutConfig } from "@spartacus/storefront/layout/config/layout-config";
-import { LoggingInterceptor } from "./logging.interceptor";
+//import { LoggingInterceptor } from "./logging.interceptor";
 import { APP_BASE_HREF } from "@angular/common";
 
 @NgModule({
