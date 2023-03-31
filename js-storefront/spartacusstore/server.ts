@@ -9,7 +9,7 @@ import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 
-const ngExpressEngine = NgExpressEngineDecorator.get(engine);
+const ngExpressEngine = NgExpressEngineDecorator.get(engine, {timeout:2000});
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app() {
@@ -25,6 +25,7 @@ export function app() {
     'html',
     ngExpressEngine({
       bootstrap: AppServerModule,
+      inlineCriticalCss: false,
     })
   );
 
@@ -32,21 +33,31 @@ export function app() {
   server.set('views', distFolder);
 
   // Serve static files from /browser
-  server.get(
-    '*.*',
+ server.get(
+   // ["/foo", "/foo*", "/foo/", "/foo/*", "/foo/*.*"],
+   '*.*',
+   // express.static('/Users/i866077/Work/Spartacus/spartacus-sample-repo/cloud-commerce-sample-setup/js-storefront/spartacusstore/dist/spartacusstore/browser', {
     express.static(distFolder, {
+
       maxAge: '1y',
     })
   );
 
   // All regular routes use the Universal engine
-  server.get('*', (req, res) => {
+  server.get('/foo/*', (req, res) => {
     res.render(indexHtml, {
       req,
       providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }],
     });
   });
 
+    // All regular routes use the Universal engine
+   /* server.post('*', (req, res) => {
+      res.render(indexHtml, {
+        req,
+        providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }],
+      });
+    });*/
   return server;
 }
 
