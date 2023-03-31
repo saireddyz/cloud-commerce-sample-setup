@@ -9,7 +9,7 @@
                 "path": "dist/spartacusstore/server/main.js"
             },
             "csr": {
-                "webroot": "dist/spartacusstore/browser/"
+                "webroot": "dist/spartacusstore/browser/foo"
             }
         }
     ],
