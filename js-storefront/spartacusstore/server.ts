@@ -9,7 +9,7 @@ import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 
-const ngExpressEngine = NgExpressEngineDecorator.get(engine, {timeout:2000});
+const ngExpressEngine = NgExpressEngineDecorator.get(engine, {timeout:5000});
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app() {
@@ -30,7 +30,7 @@ export function app() {
   );
 
   server.set('view engine', 'html');
-  server.set('views', distFolder);
+  server.set('views', distFolder + '/foo' );
 
   // Serve static files from /browser
  server.get(
@@ -44,7 +44,7 @@ export function app() {
   );
 
   // All regular routes use the Universal engine
-  server.get('/foo/*', (req, res) => {
+  server.get(['/foo/*','/foo'], (req, res) => {
     res.render(indexHtml, {
       req,
       providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }],
