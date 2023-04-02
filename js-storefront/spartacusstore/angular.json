@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            //"deployUrl": "/foo/",
+            "deployUrl": "/foo/",
             "outputPath": "dist/spartacusstore/browser/foo",
             "index": "src/index.html",
             "main": "src/main.ts",
