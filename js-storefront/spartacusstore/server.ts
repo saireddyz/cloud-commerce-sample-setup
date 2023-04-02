@@ -31,7 +31,8 @@ export function app() {
 
   server.set('view engine', 'html');
   server.set('views', distFolder + '/foo' );
-
+  const fs = require("fs");
+  fs.copyFileSync('dist/spartacusstore/browser/index.html', 'dist/spartacusstore/browser/foo/index.html');
   // Serve static files from /browser
  server.get(
    // ["/foo", "/foo*", "/foo/", "/foo/*", "/foo/*.*"],
