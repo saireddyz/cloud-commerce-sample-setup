@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --ssl",
-    "build": "yarn run build:ssr  --deploy-url foo/",
+    "build": "yarn run build:ssr",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 ng run spartacusstore:serve-ssr",
