@@ -10,7 +10,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 
 const ngExpressEngine = NgExpressEngineDecorator.get(engine, {timeout:5000});
-
+console.log(process.env.NODE_ENV);
 // The Express app is exported so that it can be used by serverless Functions.
 export function app() {
   const server = express();
@@ -32,8 +32,11 @@ export function app() {
   server.set('view engine', 'html');
   server.set('views', distFolder + '/foo' );
   const fs = require("fs");
+  if (fs.existsSync('dist/spartacusstore/browser/index.html')) {
   fs.copyFileSync('dist/spartacusstore/browser/index.html', 'dist/spartacusstore/browser/foo/index.html');
+  }
   // Serve static files from /browser
+  
  server.get(
    // ["/foo", "/foo*", "/foo/", "/foo/*", "/foo/*.*"],
    '*.*',

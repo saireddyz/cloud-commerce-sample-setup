@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 ng run spartacusstore:serve-ssr",
-    "serve:ssr": "node dist/spartacusstore/server/main.js",
+    "serve:ssr": "NODE_ENV=production node dist/spartacusstore/server/main.js",
     "build:ssr": "ng build  --base-href /foo/  && ng run spartacusstore:server && npm run postbuild",
     "postbuild":"cp -r \".\/dist/spartacusstore/browser/foo/\"index.html \".\/dist/spartacusstore/browser/\"index.html ",
     "prerender": "ng run spartacusstore:prerender"
@@ -27,6 +27,7 @@
     "@angular/platform-server": "^12.0.5",
     "@angular/router": "~12.2.0",
     "@angular/service-worker": "^12.0.5",
+    "@nestjs/common": "^9.3.12",
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
     "@ng-select/ng-select": "^7.0.1",
     "@ngrx/effects": "^12.1.0",
