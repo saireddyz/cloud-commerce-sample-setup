@@ -12,16 +12,17 @@ import { SpartacusFeaturesModule } from './spartacus-features.module';
     SpartacusFeaturesModule,
     SpartacusConfigurationModule,
     BaseStorefrontModule,
-/*     ExternalRoutesModule.forRoot(),
+    ExternalRoutesModule.forRoot(),
     ConfigModule.withConfig({
       routing: {
-        internal: [ */
-       //   '/**',
-        //  '!/cart',
-     //     '!/Open-Catalogue/**/c/**'
-    /*    ]
+        internal: [ 
+          '/**',
+          '!/cart',
+          '!/Open-Catalogue/**/c/**',
+          '!/product/1992693/DSC-T90'
+        ]
       }
-    }), */
+    }), 
   ],
   exports: [BaseStorefrontModule]
 })

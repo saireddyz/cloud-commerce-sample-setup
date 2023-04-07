@@ -10,7 +10,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 
 const ngExpressEngine = NgExpressEngineDecorator.get(engine, {timeout:5000});
-console.log(process.env.NODE_ENV);
+console.log('NODE env:' + process.env.NODE_ENV);
 // The Express app is exported so that it can be used by serverless Functions.
 export function app() {
   const server = express();
