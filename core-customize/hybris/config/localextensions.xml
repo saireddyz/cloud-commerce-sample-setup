@@ -22,7 +22,6 @@
 	  <extension name= 'b2bacceleratorservices' />
 	  <extension name= 'powertoolsstore' />
 	  <extension name= 'savedorderforms' />
-	  <extension name= 'savedorderformsocc' />
 	  <extension name= 'b2bapprovalprocess' />
 	  <extension name= 'b2bapprovalprocessfacades' />
 	  <extension name= 'b2bcommerce' />
