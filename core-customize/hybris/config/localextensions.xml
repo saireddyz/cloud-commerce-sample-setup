@@ -31,7 +31,6 @@
 	  <extension name= 'apparelstore' />
 	  <extension name= 'electronicsstore' />
 	  <extension name= 'wishlist' />
-	  <extension name= 'classificationgroupsservices' />
 	  <extension name= 'mediaconversionbackoffice' />
 	  <extension name= 'patchesbackoffice' />
 	  <extension name= 'pcmbackoffice' />
