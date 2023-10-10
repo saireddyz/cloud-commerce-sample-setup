@@ -116,3 +116,4 @@ Find more information about SAP Commerce Cloud Setup on our [help site](https://
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved.
 This file is licensed under the “SAP Sample Code License” except as noted otherwise in the [LICENSE file](https://github.wdf.sap.corp/staging-for-SAP-samples-public/cloud-commerce-sample-setup/blob/master/LICENSE).
 
+yes
