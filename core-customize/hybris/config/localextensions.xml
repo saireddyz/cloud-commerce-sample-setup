@@ -20,8 +20,6 @@
 	  <extension name= 'yaasyprofileconnect' />
 	  <extension name= 'b2bacceleratorfacades' />
 	  <extension name= 'b2bacceleratorservices' />
-	  <extension name= 'b2bocc' />
-	  <extension name= 'b2bocctests' />
 	  <extension name= 'b2bwebservicescommons' />
 	  <extension name= 'powertoolsstore' />
 	  <extension name= 'savedorderforms' />
