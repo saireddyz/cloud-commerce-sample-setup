@@ -1,5 +1,5 @@
 {
-    "commerceSuiteVersion": "2211",
+    "commerceSuiteVersion": "1905.34",
     "enableImageProcessingService": true,
     "extensions": [
         "cloudmediaconversion",
