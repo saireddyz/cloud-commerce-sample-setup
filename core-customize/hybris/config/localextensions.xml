@@ -28,7 +28,6 @@
 	  <extension name= 'b2bcommercebackoffice' />
 	  <extension name= 'b2bcommercefacades' />
 	  <extension name= 'b2bpunchout' />
-      <extension name= 'b2bpunchoutocctests' />
 	  <extension name= 'apparelstore' />
 	  <extension name= 'electronicsstore' />
 	  <extension name= 'wishlist' />
