@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -28,7 +28,7 @@ else {
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     B2cStorefrontModule.withConfig({
       backend: occConfig.backend,
       context: {
@@ -45,6 +45,7 @@ else {
         level: '2.0'
       }
     }),
+    BrowserTransferStateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
