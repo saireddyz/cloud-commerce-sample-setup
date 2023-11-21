@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "commerceSuiteVersion": "1905.34",
+=======
+    "commerceSuiteVersion": "2211.12",
+>>>>>>> 0b526315b19409c766d5291e84e93f6c5c449508
     "enableImageProcessingService": true,
     "extensions": [
         "cloudmediaconversion",
@@ -201,7 +205,7 @@
             "webapps": [
                 {
                     "name": "hac",
-                    "contextPath": "/hac"
+                    "contextPath": "admind2c/hac"
                 },
                 {
                     "name": "mediaweb",
@@ -213,7 +217,7 @@
                 },
                 {
                     "name": "backoffice",
-                    "contextPath": "/backoffice"
+                    "contextPath": "admind2c/backoffice"
                 },
                 {
                     "name": "smartedit",
