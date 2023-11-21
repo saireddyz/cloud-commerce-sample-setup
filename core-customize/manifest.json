@@ -1,5 +1,5 @@
 {
-    "commerceSuiteVersion": "2205",
+    "commerceSuiteVersion": "2211.12",
     "enableImageProcessingService": true,
     "extensions": [
         "cloudmediaconversion",
@@ -214,7 +214,7 @@
             "webapps": [
                 {
                     "name": "hac",
-                    "contextPath": "/hac"
+                    "contextPath": "admind2c/hac"
                 },
                 {
                     "name": "mediaweb",
@@ -222,7 +222,7 @@
                 },
                 {
                     "name": "backoffice",
-                    "contextPath": "/backoffice"
+                    "contextPath": "admind2c/backoffice"
                 },
                 {
                     "name": "yacceleratorstorefront",
