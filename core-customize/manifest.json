@@ -201,7 +201,7 @@
             "webapps": [
                 {
                     "name": "hac",
-                    "contextPath": "admind2c/hac"
+                    "contextPath": "/admind2c/hac"
                 },
                 {
                     "name": "mediaweb",
@@ -213,7 +213,7 @@
                 },
                 {
                     "name": "backoffice",
-                    "contextPath": "admind2c/backoffice"
+                    "contextPath": "/admind2c/backoffice"
                 },
                 {
                     "name": "smartedit",
