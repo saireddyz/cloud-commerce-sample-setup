@@ -10,19 +10,5 @@
       "csr": {
         "webroot": "dist/spartacusstore/browser/"
       }
-    },
-    {
-      "name": "b2bspastore",
-      "path": "b2bspastore",
-      "ssr": {
-        "enabled": true,
-        "path": "dist/b2bspastore/server/main.js"
-      },
-      "csr": {
-        "webroot": "dist/b2bspastore/browser/"
-      }
     }
-  ],
-  "nodeVersion": "16"
-}
 
